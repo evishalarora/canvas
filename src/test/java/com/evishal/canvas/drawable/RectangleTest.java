@@ -46,6 +46,15 @@ public class RectangleTest {
         new Rectangle(new Point(3, 4), new Point(21, 4), canvas);
     }
 
+    @Test(expected = CanvasException.class)
+    public void new_WhenPointsOnSameHorizontalLine() {
+        new Rectangle(new Point(1, 4), new Point(4, 4), canvas);
+    }
+
+    @Test(expected = CanvasException.class)
+    public void new_WhenPointsOnSameVerticalLine() {
+        new Rectangle(new Point(1, 1), new Point(1, 4), canvas);
+    }
 
     @Test(expected = CanvasException.class)
     public void new_WhenCanvasIsNull() {

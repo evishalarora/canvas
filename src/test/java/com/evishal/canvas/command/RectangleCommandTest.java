@@ -28,7 +28,7 @@ public class RectangleCommandTest {
 
     @Test
     public void execute_WhenArgumentsAreValid() {
-        testSubject.execute(canvas, "1", "2", "1", "4");
+        testSubject.execute(canvas, "1", "2", "2", "4");
 
         assertEquals(1, canvas.getElements().size());
         assertTrue(canvas.getElements().peek().getClass().isAssignableFrom(Rectangle.class));

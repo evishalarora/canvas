@@ -15,7 +15,7 @@ public class Canvas implements Drawable{
     private char[][] canvasPrint;
     private int width;
     private int height;
-    private boolean excludeBoundry = Boolean.parseBoolean(System.getProperty("excludeBoundry", "false"));
+    private boolean excludeBoundry = Boolean.parseBoolean(System.getProperty("excludeBoundary", "false"));
 
     /**
      * Initialize the canvas,

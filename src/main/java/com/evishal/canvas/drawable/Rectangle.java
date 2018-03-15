@@ -22,6 +22,8 @@ public class Rectangle implements Drawable {
         CanvasException.throwIf(topLeft.equals(bottomRight), Messages.STAR_EQ_END);
         CanvasException.throwIf(!canvas.contains(topLeft) || !canvas.contains(bottomRight),
                 Messages.REC_NOT_IN_CANVAS, topLeft, bottomRight);
+        CanvasException.throwIf(topLeft.x == bottomRight.x || topLeft.y == bottomRight.y,
+                Messages.REC_ON_SAME_LINE, topLeft, bottomRight);
     }
 
     /**

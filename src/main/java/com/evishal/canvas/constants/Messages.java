@@ -10,5 +10,6 @@ public interface Messages {
     String LINE_NOT_IN_CANVAS = "Line from %s to %s will not fit in canvas";
     String LINE_ONLY_ST_LINES = "Only horizontal and vertical lines are supported as of now";
     String REC_NOT_IN_CANVAS = "Rectangle from %s to %s will not fit in canvas";
+    String REC_ON_SAME_LINE = "Rectangle coordinates %s to %s are in same lines, will not create a rectangle";
     String PT_NOT_IN_CANVAS = "Point %s is not in canvas";
 }
